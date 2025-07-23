@@ -32,7 +32,7 @@
 
 .navbar {
   max-width: 1140px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@
 /* banner related css */
 .banner {
   max-width: 1140px;
-  margin: 0 auto; 
+  margin: 0 auto;
   display: flex;
   padding: 50px 0px 0px 20px;
   align-items: center;
@@ -69,13 +69,13 @@
 .banner-text h3 {
   font-size: 50px;
 }
-.banner-text p{
-    margin-top: -30px;
+.banner-text p {
+  margin-top: -30px;
 }
 /* product section related css */
 .product {
-    max-width: 1140px;
-    margin: 0 auto; 
+  max-width: 1140px;
+  margin: 0 auto;
 }
 .product-description {
   text-align: center;
@@ -99,14 +99,40 @@
 .card img {
   width: 250px;
 }
+/* plant lover section */
+.plant-lover{
+    max-width: 1140px;
+    margin:20px auto; 
+    padding: 50px; }
+.plant-lover-container{
+    display: flex;
+    gap: 50px; 
+    align-items: center;
+    
+}
+.plant-lover-text h3{
+ font-size: 50px;
+}
+.plant-lover-text ul li{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 /* media query */
 @media screen and (max-width: 393px) {
   .nav-text a {
     display: none;
   }
-  .nav-text{
-    padding: 40px; 
+  .nav-text {
+    padding: 40px;
   }
 
   .banner {
@@ -124,23 +150,30 @@
     width: 100%;
     padding: 10px 0px 10px auto;
   }
-  .card{
+  .card {
     width: 160px;
-    margin: 0 auto; 
-    
+    margin: 0 auto;
   }
-  .product-card-container{
-    
-    grid-template-columns: repeat(2,1fr);
-  
+  .product-card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .product-description{
+  .product-description {
     padding: 10px;
   }
-  .card img{
+  .card img {
     width: 160px;
   }
-  .btn-1{
+  .btn-1 {
     width: 160px;
+  }
+  .plant-lover-container img{
+    width: 361px;
+  }
+  .plant-lover-container{
+    flex-direction: column;
+    gap:20px; 
+  }
+  .plant-lover-text h3{
+    font-size: 25px;
   }
 }
