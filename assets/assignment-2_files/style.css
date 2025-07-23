@@ -1,0 +1,82 @@
+*{
+    max-width: 1140px;
+    margin: 0px auto ; 
+    padding: 0px; 
+    box-sizing: content-box;
+   
+}
+/* shared css */
+.bg-color-1{
+    background-color: aliceblue;
+   
+}
+.font-weight-1{
+    font-weight:100 ;
+}
+.t-c-orange{
+    color:#E95A08 ; 
+}
+.container{
+    margin: 0px auto; 
+}
+
+
+/* navbar related css */
+
+
+.navbar{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 0px 20px; 
+    margin: 0px auto; 
+    
+  
+    
+   
+}
+.nav-icon{
+  width: 20px;
+}
+.brand{
+    font-size: 30px;
+    font-family: fantasy;
+    font-weight: 700px;
+}
+.nav-text{
+    display: flex;
+    align-items: center;
+    gap: 20px ; 
+    
+}
+.nav-text a{
+    text-decoration: none;
+    color: black; 
+}
+.nav-subtext{
+    margin:-20px; 
+}
+/* banner related css */
+.banner{
+    display: flex;
+    padding: 50px 20px 0px 20px; 
+    align-items: center;
+}
+.banner-text h3{
+    font-size: 50px;
+}
+@media screen and (max-width:393px) {
+    .nav-text a{
+        display: none;
+    }
+    .banner{
+        flex-direction:column-reverse;
+        padding-right: 0px;
+        gap: 20px; 
+        
+    }
+    .banner img{
+        max-width: 300px;
+    }
+    
+}
