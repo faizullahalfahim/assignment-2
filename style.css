@@ -1,95 +1,146 @@
-*{
-    max-width: 1140px;
-    margin: 0px auto ; 
-    padding: 0px; 
-    box-sizing: content-box;
-   
-}
-/* shared css */
-.bg-color-1{
-    background-color: aliceblue;
-   
-}
-.font-weight-1{
-    font-weight:100 ;
-}
-.t-c-orange{
-    color:#E95A08 ; 
-}
-.container{
-    margin: 0px auto; 
+.body {
+  margin: 0px;
+  padding: 0px;
 }
 
+.container {
+  max-width: 1440px;
+  background-color: aliceblue;
+  margin: 0 auto;
+}
+
+/* shared css */
+.bg-color-1 {
+  background-color: aliceblue;
+}
+.btn-1 {
+  background-color: #e95a08;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  width: 250px;
+}
+.font-weight-1 {
+  font-weight: 100;
+}
+.t-c-orange {
+  color: #e95a08;
+}
 
 /* navbar related css */
 
-
-.navbar{
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2px 10px 2px; 
-    
-    
-  
-    
-   
+.navbar {
+  max-width: 1140px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2px 10px 2px;
 }
-.nav-icon{
+.nav-icon {
   width: 20px;
 }
-.brand{
-    font-size: 30px;
-    font-family: fantasy;
-    font-weight: 700px;
+.brand {
+  font-size: 30px;
+  font-family: fantasy;
+  font-weight: 700px;
 }
-.nav-text{
-    display: flex;
-    align-items: center;
-    gap: 20px ; 
-    
+.nav-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.nav-text a{
-    text-decoration: none;
-    color: black; 
+.nav-text a {
+  text-decoration: none;
+  color: black;
 }
-.nav-subtext{
-    margin:-20px; 
+.nav-subtext {
+  margin: -20px;
 }
 /* banner related css */
-.banner{
-    display: flex;
-    padding: 50px 0px 0px 20px; 
-    align-items: center;
+.banner {
+  max-width: 1140px;
+  margin: 0 auto; 
+  display: flex;
+  padding: 50px 0px 0px 20px;
+  align-items: center;
 }
-.banner-text h3{
-    font-size: 50px;
+.banner-text h3 {
+  font-size: 50px;
 }
-@media screen and (max-width:393px) {
-    .nav-text a{
-        display: none;
-    }
-    .banner{
-        flex-direction:column-reverse;
-        gap: 20px; 
-        
-        
-    }
-    .banner-text{
-        padding: 10px 10px 10px 10px; 
-    }
-    .banner-text h3 {
-     font-size: 30px;   
-    }
-    .banner-img img{
-        width: 100%;
-        padding: 10px 0px 10px auto; 
-        
-       
-    }
+.banner-text p{
+    margin-top: -30px;
+}
+/* product section related css */
+.product {
+    max-width: 1140px;
+    margin: 0 auto; 
+}
+.product-description {
+  text-align: center;
+  padding-top: 30px;
+}
+.product-description h3 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.product-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 40px;
+}
+.card {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2px;
+}
+.card img {
+  width: 250px;
+}
+
+/* media query */
+@media screen and (max-width: 393px) {
+  .nav-text a {
+    display: none;
+  }
+  .nav-text{
+    padding: 40px; 
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 0px;
+  }
+  .banner-text {
+    padding: 10px 10px 10px 10px;
+  }
+  .banner-text h3 {
+    font-size: 30px;
+  }
+  .banner-img img {
+    width: 100%;
+    padding: 10px 0px 10px auto;
+  }
+  .card{
+    width: 160px;
+    margin: 0 auto; 
     
+  }
+  .product-card-container{
     
-    
-    
+    grid-template-columns: repeat(2,1fr);
+  
+  }
+  .product-description{
+    padding: 10px;
+  }
+  .card img{
+    width: 160px;
+  }
+  .btn-1{
+    width: 160px;
+  }
 }
