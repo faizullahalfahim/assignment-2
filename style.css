@@ -107,6 +107,19 @@
 .card img {
   width: 250px;
 }
+/* trusted badge related css */
+.trusted-badge {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -150px; 
+  margin-left: -60px; 
+  position: relative;
+  
+ 
+ 
+
+}
 /* plant lover section related css*/
 .plant-lover {
   max-width: 1140px;
