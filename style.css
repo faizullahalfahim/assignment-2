@@ -1,6 +1,14 @@
+*{
+    box-sizing: content-box;}
+   
+ 
+  
+
+
 .body {
   margin: 0px;
   padding: 0px;
+  
 }
 
 .container {
@@ -116,6 +124,73 @@
 .plant-lover-text ul li {
   margin-bottom: 20px;
 }
+/* deal section related css */
+.deal{
+    max-width: 1140px;
+    margin: 20px  auto; 
+   text-align: center;
+
+}
+.deal-description h3{
+  font-size: 30px;
+ margin-bottom: -10px;
+
+}
+.deal-container{
+    margin: 50px auto; 
+    height: 424px;
+    display: flex;
+    justify-content:space-between ;
+    
+}
+
+.deal-left h3{
+  color: white; 
+ 
+
+}
+.deal-right h3  {
+  font-size: 30px;
+  color: white; 
+ 
+  
+}
+.deal-container a {
+  color: white; 
+}
+.deal-right{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5)),url(assets/deal-zabo.png) ;
+    width: 65%;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+.deal-left{
+  display: grid; 
+  gap: 30px; 
+  width: 30%;
+ 
+}
+
+.dl-top{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5)), url(assets/deal-bloom.png);
+     border-radius: 10px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dl-bottom{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5)), url(assets/deal-ana.png);
+     border-radius: 10px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
 /* join section related css */
 .join-section {
   max-width: 1440px;
@@ -152,7 +227,7 @@
 /* footer section related css */
 .footer {
   max-width: 1140px;
-  height: 348px;
+  
   margin: 50px auto;
 }
 .footer-description {
@@ -182,13 +257,18 @@
   gap: 20px;
 }
 
+
 /* media query */
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 393px)
+ {
+  
+  
   .nav-text a {
     display: none;
   }
   .nav-text {
-    padding: 40px;
+    padding: 40px; 
+    
   }
 
   .banner {
@@ -220,7 +300,9 @@
     width: 160px;
   }
   .btn-1 {
-    width: 160px;
+    margin: 0px; 
+    padding: 0px; 
+    width: 150px;
   }
   .plant-lover-container img {
     width: 361px;
@@ -254,7 +336,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+  }
     
 
   .footer-nav-container {
@@ -269,4 +351,30 @@
     gap: 15px; 
     margin: 10px;
   }
+  .deal{
+    max-width: 361px;
+    
+  }
+  .deal-container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; 
+    justify-content: center;
+  }
+  .deal-left{
+    
+    gap:10px; 
+  }
+  .dl-top, .dl-bottom{
+    height: 150px;
+    width: 361px;
+  }
+  .deal-right{
+    width:361px;
+    height: 150px;
+  }
+  .deal-right h3{
+    font-size: 16px;
+  }
+
 }
